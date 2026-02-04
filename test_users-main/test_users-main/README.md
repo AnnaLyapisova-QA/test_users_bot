@@ -12,11 +12,11 @@
 
 Стартовое меню:
 
-![image](https://raw.githubusercontent.com/German-D/test_users/main/static/menu.png)
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/test_users_bot/refs/heads/main/bot_start.png)
 
 После выбора количества пользователей:
 
-![image](https://raw.githubusercontent.com/German-D/test_users/main/static/generate.png)
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/test_users_bot/refs/heads/main/bot_1.png)
 
 ## 💻 Технологии
 
@@ -28,33 +28,40 @@
 
 1. Скачать проект
 
-2. Создать бота и через [@BotFather](https://t.me/BotFather) и вставить в проекте свой токен от бота
+2. Создать бота через [@BotFather](https://t.me/BotFather) и вставить в проекте свой токен от бота
 
 3. Создаём виртуальное окружение внутри папки проекта.
-Далее команды для MacOS (для windows инуструкция [есть вот тут](https://realpython.com/python-virtual-environments-a-primer/#create-it))
+Далее команды для windows.
 
 ``` markdown
-python3 -m venv venv
+python -m venv env  # возможно не python, а python3
 ```
 
+Активируем окружение (возможны два варианта) 
+
+Первый. Выполнение powershell-скрипта 
+
 ``` markdown
-source venv/bin/activate
+.\env\Scripts\Activate.ps1
 ```
+Второй. Переключиться в терминал cmd и выполнить команду
+
+``` markdown
+.\env\Scripts\activate
+```
+
 4. Устанавливаем библиотеки
 
 ``` markdown
-python3 -m pip install pyTelegramBotAPI
+pip install pyTelegramBotAPI
 ```
 
 ``` markdown
-python3 -m pip install faker
+pip install faker
 ```
 
 5. Запускаем
+
 ``` markdown
-python3 test_users_bot.py
+python .\test_users-main\main.py
 ```
-
-## Автор
-
-Герман Дольников ([@dolnikov](https://t.me/dolnikov))
